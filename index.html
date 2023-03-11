@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Chrome Dino Game</title>
+   <link rel="stylesheet" href="style.css">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+
+<body>
+   <div class="backdrop" id="backdrop"></div>
+   <div id="start-message" class="start-message">Press any key to start</div>
+   <audio class="jump">
+      <source src="assets/Run.mp3" type="audio/mpeg">
+   </audio>
+   <div class="cloud-container"></div>
+   <div id="game" class="game">
+
+      <div class="scoreDiv">
+         <div id="score " class="score old">0</div>
+         <div id="score" class="score">0</div>
+      </div>
+      <img src="assets/ground-01.png" class="ground">
+      <img src="assets/ground-01.png" class="ground">
+      <img src="assets/ch-0.png" id="dino" class="dino">
+      <div id="gameover-message" class="gameover-message hide">
+         <p>Game over</p>
+         <span>Press any key to restart</span>
+      </div>
+   </div>
+   <script src="/script.js"></script>
+</body>
+
+</html>
